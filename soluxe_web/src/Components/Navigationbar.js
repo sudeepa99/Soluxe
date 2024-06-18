@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Navigationbar.css'
+import Searchbar from './Searchbar';
 
 export default function Navigationbar() {
   return (
@@ -17,6 +18,7 @@ export default function Navigationbar() {
             <Nav.Link href="Accessories">Accessories</Nav.Link>
             <Nav.Link href="Outlet">Outlet</Nav.Link>
             <Nav.Link href="Ourstory">Our Story</Nav.Link>
+            <Searchbar/>
           </Nav>
         </Container>
       </Navbar>
