@@ -1,0 +1,14 @@
+.navigationbar{
+    margin-top: 10px;
+    border-bottom: 2px;
+    border-color: rgb(117, 107, 107);
+    border-bottom-style: outset;
+    border-bottom-color: rgb(48, 53, 58);
+    
+}
+.me-auto{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
