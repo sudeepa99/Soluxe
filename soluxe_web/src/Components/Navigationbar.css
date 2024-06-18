@@ -12,3 +12,10 @@
     flex-direction: row;
     gap: 25px;
 }
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent the icon from interfering with input focus */
+  }
