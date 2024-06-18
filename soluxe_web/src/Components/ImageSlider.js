@@ -3,10 +3,12 @@ import Carousel from 'react-bootstrap/Carousel';
 import image_man from '../Assets/funny-smiling-hipster-handsome-man-guy-stylish-summer-clothes-street-posing-sitting-grass-sunglasses.jpg';
 import image_man2 from '../Assets/man-sitting-cobblestone-road.jpg'
 import image_women from '../Assets/girl-smiling-while-talking-her-mobile-sitting-floor.jpg'
+import './ImageSlider.css';
+
 export default function ImageSlider() {
   return (
-    <div>
-        <Carousel data-bs-theme="dark">
+    <div className='carousel'>
+        <Carousel data-bs-theme="dark" interval={500} controls={true} indicators={true}>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -14,8 +16,7 @@ export default function ImageSlider() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>Step into Style, Discover Your Perfect Pair Today</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -25,8 +26,7 @@ export default function ImageSlider() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Unmatched Comfort Meets Timeless Elegance, Shop Our Shoe Collection</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -36,9 +36,8 @@ export default function ImageSlider() {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h5>Third slide label</h5>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          Elevate Your Every Step with Our Exclusive Footwear Range
           </p>
         </Carousel.Caption>
       </Carousel.Item>
