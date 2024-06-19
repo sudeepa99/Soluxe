@@ -5,3 +5,34 @@
     font-style: oblique;
     font-weight: 500;
 }
+.content{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+.button1{
+    position: absolute;
+    left: 350px;
+    margin-top: 50px;
+    gap: 30px;
+    background-color: transparent;
+    
+
+}
+
+.custom-button {
+    background-color: transparent; 
+    color: black;
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+.custom-button:hover{
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+}

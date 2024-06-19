@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import './Content.css';
+import { Button } from 'react-bootstrap';
 
 export default function Content() {
   return (
@@ -8,10 +8,11 @@ export default function Content() {
         <div className='head'>
         <h1>New Arrivals</h1>
         </div>
-        <div>
-        <Button href="#">Link</Button> <Button type="submit">Button</Button>{' '}
-        
-      
+        <div className='button1'>
+            <Button className='custom-button'>Men</Button>
+            <Button className='custom-button'>Women</Button>
+            
+            
         </div>
       
     </div>
