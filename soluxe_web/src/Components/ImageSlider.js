@@ -8,7 +8,7 @@ import './ImageSlider.css';
 export default function ImageSlider() {
   return (
     <div className='carousel'>
-        <Carousel data-bs-theme="dark" interval={500} controls={true} indicators={true}>
+        <Carousel data-bs-theme="dark" interval={3000} controls={true} indicators={true}>
       <Carousel.Item>
         <img
           className="d-block w-100"
