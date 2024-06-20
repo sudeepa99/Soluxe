@@ -1,25 +1,24 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import image_men_shoe1 from '../Assets/brown-leather-shoes.jpg'
 import './CardDesign.css';
 
-export default function CardDesign() {
+export default function CardDesign(props) {
   return (
     <div class="cards">
         <div>
         <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={image_men_shoe1} />
+        <Card.Img variant="top" src={props.image_name} />
         <Card.Body>
-        <Card.Title>Men's Royal 2.0</Card.Title>
+        <Card.Title>{props.detail}</Card.Title>
         <Card.Text>
-          $200.0
+          {props.shoe_value}
         </Card.Text>
         <Button variant="primary">See More</Button>
         </Card.Body>
         </Card>
 
-        </div>
+        {/* </div>
         <div>
         <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={image_men_shoe1} />
@@ -56,7 +55,7 @@ export default function CardDesign() {
         </Card.Text>
         <Button variant="primary">See More</Button>
         </Card.Body>
-        </Card>
+        </Card> */}
 
         </div>
         
