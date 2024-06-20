@@ -14,7 +14,9 @@ import image_women_shoe3 from '../Assets/shoes-footwear-woman.jpg';
 import image_women_shoe4 from '../Assets/woman-shoes new.jpg';
 import image_women_shoe5 from '../Assets/high-heels-black-velvet.jpg';
 import './Homepage.css';
-
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { IoChevronForward } from "react-icons/io5";
+import { IoIosArrowBack } from "react-icons/io";
 
 
 
@@ -24,32 +26,38 @@ import './Homepage.css';
 
 
 export default function Homepage() {
+  const scrollLeft = () => {
+    document.getElementById('cardContainer').scrollBy({ left: -300, behavior: 'smooth' });
+  };
+
+  const scrollRight = () => {
+    document.getElementById('cardContainer').scrollBy({ left: 300, behavior: 'smooth' });
+  };
   return (
-    <div >
-      <Navigationbar/>
-      <ImageSlider/>
-      <Content/>
-      <div className='card_collection'>
-      {/* men shoes */}
-      <CardDesign image_name={image_men_shoe1} shoe_value="200 $" detail="jsjksksksk"/>
-      <CardDesign image_name={image_men_shoe2} shoe_value="350 $" detail="jsjksksksk"/>
-      <CardDesign image_name={image_men_shoe3} shoe_value="400 $" detail="jsjksksksk"/>
-      <CardDesign image_name={image_men_shoe4} shoe_value="300 $" detail="jsjksksksk"/>
-      <CardDesign image_name={image_men_shoe5} shoe_value="500 $" detail="jsjksksksk"/>
+    <div>
+      <Navigationbar />
+      <ImageSlider />
+      <Content />
+      <div className="scroll-container">
+      <IoIosArrowBack className="scroll-icon" onClick={scrollLeft}  />
+  
+        <div id="cardContainer" className='card_collection'>
+          {/* men shoes */}
+          <CardDesign image_name={image_men_shoe1} shoe_value="200 $" detail="jsjksksksk" />
+          <CardDesign image_name={image_men_shoe2} shoe_value="350 $" detail="jsjksksksk" />
+          <CardDesign image_name={image_men_shoe3} shoe_value="400 $" detail="jsjksksksk" />
+          <CardDesign image_name={image_men_shoe4} shoe_value="300 $" detail="jsjksksksk" />
+          <CardDesign image_name={image_men_shoe5} shoe_value="500 $" detail="jsjksksksk" />
 
-      {/* women shoes */}
-
-      <CardDesign image_name={image_women_shoe1} shoe_value="500 $" detail="jsjksksksk"/>
-      <CardDesign image_name={image_women_shoe2} shoe_value="500 $" detail="jsjksksksk"/>
-      <CardDesign image_name={image_women_shoe3} shoe_value="500 $" detail="jsjksksksk"/>
-      <CardDesign image_name={image_women_shoe4} shoe_value="500 $" detail="jsjksksksk"/>
-      <CardDesign image_name={image_women_shoe5} shoe_value="500 $" detail="jsjksksksk"/>
-
-
-
+          {/* women shoes */}
+          <CardDesign image_name={image_women_shoe1} shoe_value="500 $" detail="jsjksksksk" />
+          <CardDesign image_name={image_women_shoe2} shoe_value="500 $" detail="jsjksksksk" />
+          <CardDesign image_name={image_women_shoe3} shoe_value="500 $" detail="jsjksksksk" />
+          <CardDesign image_name={image_women_shoe4} shoe_value="500 $" detail="jsjksksksk" />
+          
+        </div>
+        <IoChevronForward  className="scroll-icon" onClick={scrollRight} />
       </div>
-      
-      
     </div>
   );
 }
