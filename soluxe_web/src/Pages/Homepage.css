@@ -1,0 +1,5 @@
+.card_collection{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
