@@ -22,6 +22,7 @@ import featured_image1 from '../Assets/drag-queen-show-shoes-arrangement-high-an
 import featured_image2 from '../Assets/view-shoe-rack-stacking-pair-footwear.jpg';
 import featured_image3 from '../Assets/leather-shoes-wooden-background.jpg';
 import featured_image4 from '../Assets/view-shoe-rack-with-storage-space-footwear.jpg';
+import Footer from '../Components/Footer';
 
 
 
@@ -81,6 +82,8 @@ export default function Homepage() {
         
 
       </div>
+
+      <Footer/>
       
     </div>
   );
