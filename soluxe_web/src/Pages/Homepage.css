@@ -29,4 +29,20 @@
     flex-wrap: nowrap;
     gap: 50px; 
   }
+  .featured_header{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-weight: 500;
+  }
+  .featured_cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    border: none;
+    margin-left: 65px;  
+
+  }
   
