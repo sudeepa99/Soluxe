@@ -20,13 +20,13 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     width: 100%;
-    margin-left: 65px; /* Adjust as necessary */
+    margin-left: 65px; 
   }
   
   .card_collection {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 50px; /* Optional: adds some space between cards */
+    gap: 50px; 
   }
   
