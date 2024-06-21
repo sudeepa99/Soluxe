@@ -70,11 +70,15 @@ export default function Homepage() {
       <div>
       <div className='featured_header'>
         <h1>Featured Collections</h1> 
-        </div>
+      </div>
+      <div className='featured_cards'>
         <Featured Image_path={featured_image1} title="Shop Low Tops"/>
         <Featured Image_path={featured_image2} title="Shop Loafers"/>
         <Featured Image_path={featured_image3} title="Shop Shoe Care & Laces"/>
         <Featured Image_path={featured_image4} title="Shop Royale 2.0"/>
+        
+      </div>
+        
 
       </div>
       
