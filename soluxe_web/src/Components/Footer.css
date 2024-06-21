@@ -1,0 +1,26 @@
+.container_footer{
+    background-color: #ccc2c2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.footer_button{
+    background: none;
+    border: none;
+    border-style: none;
+    
+}
+.footer_button:hover{
+    background: none;
+    border: none;
+    box-shadow: none;
+
+}
+.footer_button:focus{
+    outline: none;
+    box-shadow: none;
+}
