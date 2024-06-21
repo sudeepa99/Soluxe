@@ -17,6 +17,14 @@ import './Homepage.css';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { IoChevronForward } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
+import Featured from '../Components/Featured';
+import featured_image1 from '../Assets/drag-queen-show-shoes-arrangement-high-angle.jpg';
+import featured_image2 from '../Assets/view-shoe-rack-stacking-pair-footwear.jpg';
+import featured_image3 from '../Assets/leather-shoes-wooden-background.jpg';
+import featured_image4 from '../Assets/view-shoe-rack-with-storage-space-footwear.jpg';
+
+
+
 
 
 
@@ -58,6 +66,12 @@ export default function Homepage() {
         </div>
         <IoChevronForward  className="scroll-icon" onClick={scrollRight} />
       </div>
+      {/* Featured list */}
+      <div>
+        <Featured Image_path={featured_image1} title="Shop Low Tops"/>
+
+      </div>
+      
     </div>
   );
 }
