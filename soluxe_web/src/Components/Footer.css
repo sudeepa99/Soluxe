@@ -3,8 +3,9 @@
     flex-direction: column;
     margin-top: 30px;
     background-color: rgb(199, 205, 210);
-    gap: 10px;
-    padding-top: 15px;
+    gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     
 
 }
@@ -27,7 +28,8 @@
 }
 
 .footer_button,
-.footer_text {
+.footer_text,
+.button_privacy {
     background: none;
     border: none;
     outline: none;
@@ -40,7 +42,9 @@
   }
   
   .footer_button:hover,
-  .footer_button:focus {
+  .footer_button:focus,
+  .button_privacy:hover,
+  .button_privacy:focus {
     background: none;
     border: none;
     box-shadow: none;
@@ -52,3 +56,26 @@
     font-weight: bold;
 
   }
+
+  .social_media{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social_icon{
+    size: 36px;
+    color: black;
+  }
+  .footer_text{
+    margin-left: 20px;
+    
+    font-size: 16px;
+
+  }  
+  .button_privacy{
+    margin-left: 20px;
+  }
+  
