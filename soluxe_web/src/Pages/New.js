@@ -13,6 +13,7 @@ import image_women_shoe2 from '../Assets/woman-shoes.jpg';
 import image_women_shoe3 from '../Assets/shoes-footwear-woman.jpg';
 import image_women_shoe4 from '../Assets/woman-shoes new.jpg';
 import image_women_shoe5 from '../Assets/high-heels-black-velvet.jpg';
+import Footer from '../Components/Footer';
 
 
 export default function New() {
@@ -35,6 +36,7 @@ export default function New() {
         
 
         </div>
+        <Footer/>
         
       </div>
       
