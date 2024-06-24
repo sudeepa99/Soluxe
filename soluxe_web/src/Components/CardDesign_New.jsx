@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { FaPlus } from 'react-icons/fa';
 import { Tooltip } from 'react-tooltip';
+import "./CardDesign_New.css"
 
 export default function CardDesign_New(props) {
   return (
