@@ -14,10 +14,9 @@ export default function CardDesign_New(props) {
         <Card.Body>
         
         <div className='button_section'>
-        <Card.Text>
+        
         <Card.Title>{props.detail}</Card.Title>
-          {props.shoe_value}
-        </Card.Text>
+        <Card.Text>{props.shoe_value}</Card.Text>
         </div>
         <Button className='add_to_cart'  data-tooltip-id="add-to-cart-tooltip" data-tooltip-content="Add to cart"><FaPlus className='add_icon' />
         </Button>
