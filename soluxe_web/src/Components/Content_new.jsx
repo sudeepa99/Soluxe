@@ -9,15 +9,17 @@ export default function Content_new() {
         <h1>New Arrivals</h1>
       </div>
       <div className='contennew_drop'>
-      <Dropdown cl>
+      <Dropdown >
       <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Dropdown Button
+        Sort By
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        <Dropdown.Item href="#/action-1">Best Match</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Price: Low to High</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Price: High to Low</Dropdown.Item>
+        <Dropdown.Item href="#/action-4">Newest Arrivals</Dropdown.Item>
+
       </Dropdown.Menu>
     </Dropdown>
       </div>
