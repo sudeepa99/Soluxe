@@ -10,7 +10,7 @@ export default function Navigationbar() {
     <div className='navigationbar'>
         <Navbar bg="white" data-bs-theme="white">
         <Container>
-          <Navbar.Brand href="Homepage">Soluxe</Navbar.Brand>
+          <Navbar.Brand href="/">Soluxe</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="New">New</Nav.Link>
             <Nav.Link href="Men">Men</Nav.Link>
