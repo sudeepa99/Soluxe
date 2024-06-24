@@ -1,0 +1,16 @@
+.head_new{
+    margin-top: 2%;
+    color: black;
+    margin-left: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-weight: 500;
+}
+.body_contentnew{
+    display: flex;
+    flex-direction: row;
+    
+}
+.contennew_drop{
+    margin-top: 2%;
+}
