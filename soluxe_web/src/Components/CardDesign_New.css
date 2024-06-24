@@ -1,0 +1,41 @@
+.newpage_cards{
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  background-color: rgb(191, 198, 203);
+
+}
+
+.newpage_cards:hover,
+.newpage_cards:focus{
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+}
+.button_section{
+    display: flex;
+    flex: row;
+    gap: 60%;
+}
+.add_to_cart{
+    margin-left: 0;
+    margin-top: 3%;
+}
+
+.new_tag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5%;
+    margin-top: 3%;
+    border: 2px solid black;
+    border-radius: 25%;
+    padding: 1%;
+
+}
