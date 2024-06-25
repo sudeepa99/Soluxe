@@ -8,6 +8,7 @@ import image_men_shoe2 from '../Assets/shoes.jpg';
 import image_men_shoe3 from '../Assets/classic-stylish-men-s-shoes.jpg';
 import image_men_shoe4 from '../Assets/men-shoes.jpg';
 import image_men_shoe5 from '../Assets/classic-stylish-men-s-shoes-closeup-gray.jpg';
+import Footer from '../Components/Footer';
 
 
 export default function Men() {
@@ -22,9 +23,8 @@ export default function Men() {
         <CardDesign_New image_name={image_men_shoe4} shoe_value="200$" detail="anjksksks" tag_name="Men"/>
         <CardDesign_New image_name={image_men_shoe5} shoe_value="200$" detail="anjksksks" tag_name="Men"/>
         
-        
-
         </div>
+        <Footer/>
       
     </div>
   )
