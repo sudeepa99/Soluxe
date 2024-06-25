@@ -20,7 +20,7 @@ export default function CardDesign_New(props) {
         </div>
         <Button className='add_to_cart'  data-tooltip-id="add-to-cart-tooltip" data-tooltip-content="Add to cart"><FaPlus className='add_icon' />
         </Button>
-        <p className='new_tag'>New</p>
+        <p className='new_tag'>{props.tag_name}</p>
         <Tooltip id="add-to-cart-tooltip" />
         
         </Card.Body>
