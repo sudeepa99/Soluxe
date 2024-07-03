@@ -7,7 +7,7 @@ export default function Story_container1() {
     <div className='story_container1'>
         <div>
             <p>
-            Welcome to Soluxe, where style meets comfort, and every step is a statement. Our journey began with a simple yet profound idea: to create a shoe brand that combines luxury with everyday practicality. At Soluxe, we believe that shoes are more than just an accessory; they are a reflection of your personality, a testament to your taste, and a foundation of your confidence.
+            Each pair of Soluxe shoes is meticulously designed and crafted with precision. We use only the finest materials, sourced from the best suppliers around the world. Our skilled artisans bring these materials to life, creating shoes that are not only beautiful but also durable and comfortable. Every stitch, every cut, and every detail is a testament to our commitment to excellence.
             </p>
             <p>
             Our story started in 1978, when a group of passionate shoe enthusiasts came together with a shared vision. We wanted to disrupt the shoe industry by offering high-quality, stylish footwear that doesn't compromise on comfort. Drawing inspiration from the latest fashion trends and timeless classics, we embarked on a mission to craft shoes that cater to every individual's unique style and needs.
