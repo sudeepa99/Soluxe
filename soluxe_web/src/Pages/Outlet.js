@@ -34,6 +34,7 @@ export default function Outlet() {
       <CardDesign_outlet image_name={image_women_shoe5} shoe_value="290$" actual_value="250$"detail="anjksksks" tag_name="Final Sale"/>
 
       </div>
+      <footer/>
 
 
       
