@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Navigationbar from '../Components/Navigationbar';
 import Content_outlet from '../Components/Content_outlet';
 import image_men_shoe1 from '../Assets/brown-leather-shoes.jpg';
 import image_men_shoe2 from '../Assets/shoes.jpg';
@@ -16,6 +17,7 @@ import "./Outlet.css";
 export default function Outlet() {
   return (
     <div>
+      <Navigationbar/>
       <Content_outlet/>
 
       <div className="outlet_container">
