@@ -1,10 +1,12 @@
 import React from 'react';
-import FounderImg from "../Assets/shoe worker.jpg";
+import WorkerImg from "../Assets/shoe worker.jpg";
+import "./Story_container3.css";
+import { Image } from 'react-bootstrap';
 
 export default function Story_container3() {
   return (
     <div className='story_container3'>
-        <div>
+        <div >
             <p>
             At Soluxe, we believe that our success is rooted in the dedication and expertise of our team. Our workers are more than just employees; they are the heart and soul of our company. Their cleverness, creativity, and unwavering commitment to excellence are what set Soluxe apart in the competitive world of footwear.
             </p>
@@ -13,11 +15,10 @@ export default function Story_container3() {
             </p>    
         </div>
         <div>
-        
-            <Image className="founder_img" src={FounderImg} rounded />
-            <div style={{color:"black", fontWeight:"bold", textAlign:"center"}}>
-                James Watson (Founder of Soluxe)
-            </div>
+            <Image className="worker_img" src={WorkerImg} rounded />
+        <div style={{color:"black", fontWeight:"bold", textAlign:"center"}}>
+            Creative Workers
+        </div>
         
         </div>
           

@@ -5,6 +5,7 @@ import { Image } from 'react-bootstrap';
 import "./OurStory.css";
 import Story_container1 from '../Components/Story_container1';
 import Story_container2 from '../Components/Story_container2';
+import Story_container3 from '../Components/Story_container3';
 
 export default function OurStory() {
   return (
@@ -13,6 +14,7 @@ export default function OurStory() {
       <Image className="banner_img" src={BannerImage}></Image>
       <Story_container1/>
       <Story_container2/>
+      <Story_container3/>
       
     </div>
   )
