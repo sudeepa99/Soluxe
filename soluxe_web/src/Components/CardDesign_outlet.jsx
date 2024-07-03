@@ -17,7 +17,12 @@ export default function CardDesign_outlet(props) {
         <div className='button_section'>
         
         <Card.Title>{props.detail}</Card.Title>
-        <Card.Text>{props.shoe_value}</Card.Text>
+        <div className="outlet_button_section">
+        <Card.Text id='sal_value'>{props.shoe_value}</Card.Text>
+        <Card.Text id='act_value'>{props.actual_value}</Card.Text>
+
+        </div>
+        
         </div>
         <Button className='add_to_cart'  data-tooltip-id="add-to-cart-tooltip" data-tooltip-content="Add to cart"><FaPlus className='add_icon' />
         </Button>

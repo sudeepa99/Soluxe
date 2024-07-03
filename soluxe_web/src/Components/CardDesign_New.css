@@ -21,7 +21,7 @@
 .button_section{
     display: flex;
     flex: row;
-    gap: 60%;
+    gap: 55%;
 }
 .add_to_cart{
     margin-left: 0;
