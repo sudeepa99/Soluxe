@@ -3,7 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { FaPlus } from 'react-icons/fa';
 import { Tooltip } from 'react-tooltip';
-import "./CardDesign_New.css"
+import "./CardDesign_New.css";
+import "./CardDesign_outlet.css";
 
 export default function CardDesign_outlet(props) {
   return (
@@ -20,7 +21,7 @@ export default function CardDesign_outlet(props) {
         </div>
         <Button className='add_to_cart'  data-tooltip-id="add-to-cart-tooltip" data-tooltip-content="Add to cart"><FaPlus className='add_icon' />
         </Button>
-        <p className='new_tag'>{props.tag_name}</p>
+        <p className='sale_tag'>{props.tag_name}</p>
         <Tooltip id="add-to-cart-tooltip" />
         
         </Card.Body>

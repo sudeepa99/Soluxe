@@ -1,0 +1,10 @@
+.sale_tag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5%;
+    margin-top: 3%;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 0px 7px 0px 7px ;
+}
