@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
-import Materialimg from "../Assets/material.jpg"
+import Materialimg from "../Assets/material.jpg";
+import './Story_container2.css';
 
 export default function Story_container2() {
   return (
@@ -15,7 +16,7 @@ export default function Story_container2() {
         
             <Image className="material_img" src={Materialimg} rounded />
             <div style={{color:"black", fontWeight:"bold", textAlign:"center"}}>
-                James Watson (Founder of Soluxe)
+                High Quality Materials
             </div>
         
         </div>

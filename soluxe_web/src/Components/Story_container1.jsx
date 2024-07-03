@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
 import FounderImg from "../Assets/founder.jpg";
-import "./Story_container.css";
+import "./Story_container1.css";
 export default function Story_container1() {
   return (
     <div className='story_container1'>
