@@ -21,17 +21,17 @@ export default function Outlet() {
       <Content_outlet/>
 
       <div className="outlet_container">
-      <CardDesign_outlet image_name={image_men_shoe1} shoe_value="200$" detail="anjksksks" tag_name="Men"/>
-      <CardDesign_outlet image_name={image_men_shoe2} shoe_value="200$" detail="anjksksks" tag_name="Men"/>
-      <CardDesign_outlet image_name={image_men_shoe3} shoe_value="200$" detail="anjksksks" tag_name="Men"/>
-      <CardDesign_outlet image_name={image_men_shoe4} shoe_value="200$" detail="anjksksks" tag_name="Men"/>
-      <CardDesign_outlet image_name={image_men_shoe5} shoe_value="200$" detail="anjksksks" tag_name="Men"/>
+      <CardDesign_outlet image_name={image_men_shoe1} shoe_value="200$" detail="anjksksks" tag_name="Final Sale"/>
+      <CardDesign_outlet image_name={image_men_shoe2} shoe_value="200$" detail="anjksksks" tag_name="Final Sale"/>
+      <CardDesign_outlet image_name={image_men_shoe3} shoe_value="200$" detail="anjksksks" tag_name="Final Sale"/>
+      <CardDesign_outlet image_name={image_men_shoe4} shoe_value="200$" detail="anjksksks" tag_name="Final Sale"/>
+      <CardDesign_outlet image_name={image_men_shoe5} shoe_value="200$" detail="anjksksks" tag_name="Final Sale"/>
 
-      <CardDesign_outlet image_name={image_women_shoe1} shoe_value="200$" detail="anjksksks" tag_name="Women"/>
-      <CardDesign_outlet image_name={image_women_shoe2} shoe_value="200$" detail="anjksksks" tag_name="Women"/>
-      <CardDesign_outlet image_name={image_women_shoe3} shoe_value="200$" detail="anjksksks" tag_name="Women"/>
-      <CardDesign_outlet image_name={image_women_shoe4} shoe_value="200$" detail="anjksksks" tag_name="Women"/>
-      <CardDesign_outlet image_name={image_women_shoe5} shoe_value="200$" detail="anjksksks" tag_name="Women"/>
+      <CardDesign_outlet image_name={image_women_shoe1} shoe_value="200$" detail="anjksksks" tag_name="Final Sale"/>
+      <CardDesign_outlet image_name={image_women_shoe2} shoe_value="200$" detail="anjksksks" tag_name="Final Sale"/>
+      <CardDesign_outlet image_name={image_women_shoe3} shoe_value="200$" detail="anjksksks" tag_name="Final Sale"/>
+      <CardDesign_outlet image_name={image_women_shoe4} shoe_value="200$" detail="anjksksks" tag_name="Final Sale"/>
+      <CardDesign_outlet image_name={image_women_shoe5} shoe_value="200$" detail="anjksksks" tag_name="Final Sale"/>
 
       </div>
 
