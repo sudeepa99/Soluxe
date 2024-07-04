@@ -1,4 +1,18 @@
 .story_container4{
     display: flex;
     flex-direction: row;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+.image_customer{
+    width: 70%;
+    height: 80%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 20%;
+    
+}
+

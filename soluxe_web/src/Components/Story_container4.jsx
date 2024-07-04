@@ -3,6 +3,7 @@ import { Image } from 'react-bootstrap';
 import Image1 from "../Assets/image0.jpg";
 import Image2 from "../Assets/image1.jpg";
 import "./Story_container4.css";
+import Footer from '../Components/Footer';
 
 
 export default function Story_container4() {
@@ -18,7 +19,7 @@ export default function Story_container4() {
             <div>
                 <Image className='image_customer' src={Image2}/>
                 <div style={{color:"black", fontWeight:"bold", textAlign:"center"}}>
-                    Happy Customer
+                    High Quality Product
                 </div>
 
             </div>
