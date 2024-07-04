@@ -6,6 +6,7 @@ import "./OurStory.css";
 import Story_container1 from '../Components/Story_container1';
 import Story_container2 from '../Components/Story_container2';
 import Story_container3 from '../Components/Story_container3';
+import Story_container4 from '../Components/Story_container4';
 
 export default function OurStory() {
   return (
@@ -15,6 +16,7 @@ export default function OurStory() {
       <Story_container1/>
       <Story_container2/>
       <Story_container3/>
+      <Story_container4/>
       
     </div>
   )
