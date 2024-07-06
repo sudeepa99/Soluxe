@@ -7,6 +7,7 @@ import Women from './Pages/Women';
 import Accessories from './Pages/Accessories';
 import Outlet from './Pages/Outlet';
 import OurStory from './Pages/OurStory';
+import SignUp from './Pages/SignUp';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/accessories' element={<Accessories/>}></Route>
         <Route path='/outlet' element={<Outlet/>}></Route>
         <Route path='ourstory' element={<OurStory/>}></Route>
+        <Route path='/signup' element={<SignUp/>}></Route>
       </Routes>
       
       </BrowserRouter>
