@@ -8,6 +8,7 @@ import './Searchbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaUser } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
+import Login from '../Pages/Login';
 
 export default function Searchbar() {
   return (
@@ -21,7 +22,7 @@ export default function Searchbar() {
               className=" mr-sm-2"
             />
             <i className="fas fa-search search-icon"></i>
-            <FaUser className='user_icon'/>
+            <FaUser className='user_icon' onClick={Login}/>
             <FaCartShopping className='cart_icon' />
           </Col>
           
