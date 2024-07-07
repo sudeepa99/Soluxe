@@ -1,46 +1,44 @@
 import React from 'react';
-import  { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Button, Image } from 'react-bootstrap';
+import Logo from "../Assets/logo_soluxe.png";
 
 export default function SignUp() {
-  const [error, setError] = useState('');
+  
     
   return (
-    <>
-    <div className="container-regi">
-        <h2>
-          Create an <span>Account</span>
-        </h2>
-        <form >
-          <div className="form-group">
-            <label htmlFor="name">Enter Your Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="id">Enter Your Register Number</label>
-            <input
-              type="text"
-              id="id"
-              name="id"
-              required
-            />
-          </div>
-        
-              
-          <button type="submit" className='regi-button'>Add</button><br />
-          {error && <p className="error">{error}</p>}
-          <p>
-            Already have an account? <span><Link to="/login">Login</Link></span>
-          </p>
-        </form>
-      </div>
-    </>
+    <div>
+      <div className='log_in'>
+            <Image className='logo' src={Logo}/>
+            <h1 className='log_in_header'>SIGNUP</h1>
+
+            <form>
+                <div className="form_one">
+                <div className='input_fields'>
+                    <label>Name</label>
+                    <label>Email</label>
+                    <label>Password</label>
+                    {/* <label>Password Confirmation</label> */}
+                </div>
+
+                <div className='input_fields'>
+                    <input type='text' name='name'/>
+                    <input type='email' name='email'/>
+                    <input type='text' name='password'/>
+                    {/* <input type='text' name='password confirmation'/> */}
+                </div>
+
+                </div>
+                
+
+                <Button className="login_button" type='submit' >SignUp</Button>
+            </form>
+            <div className='bottom_buttons'>
+                <Button className="login_button2">Already have account? Login</Button>
+                
+            </div>
+        </div>
+
+    </div>
     
   )
 }
