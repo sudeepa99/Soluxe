@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 import './Searchbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaUser } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
 
 export default function Searchbar() {
   return (
@@ -21,6 +22,7 @@ export default function Searchbar() {
             />
             <i className="fas fa-search search-icon"></i>
             <FaUser className='user_icon'/>
+            <FaCartShopping className='cart_icon' />
           </Col>
           
           
