@@ -8,6 +8,7 @@ import Accessories from './Pages/Accessories';
 import Outlet from './Pages/Outlet';
 import OurStory from './Pages/OurStory';
 import SignUp from './Pages/SignUp';
+import Login from './Pages/Login';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/outlet' element={<Outlet/>}></Route>
         <Route path='ourstory' element={<OurStory/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
       </Routes>
       
       </BrowserRouter>
