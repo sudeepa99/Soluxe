@@ -15,5 +15,11 @@
     position: absolute;
     right: 0px;
     top: 5px;
-    left: 140%;
+    left: 135%;
+}
+.cart_icon{
+    font-size: 140%;
+    position: absolute;
+    top: 5px;
+    left: 155%;
 }
