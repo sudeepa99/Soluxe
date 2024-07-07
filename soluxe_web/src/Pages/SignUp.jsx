@@ -1,7 +1,9 @@
 import React from 'react';
-import { Form } from 'react-router-dom';
+import  { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function SignUp() {
+  const [error, setError] = useState('');
     
   return (
     <>
