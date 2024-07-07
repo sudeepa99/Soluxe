@@ -1,4 +1,4 @@
-.story_container3{
+ .story_container3{
     display: flex;
     flex-direction: row;
     margin-left: 10%;
@@ -15,4 +15,5 @@
 }
 .container3_para{
     width: 100%;
-}
+} 
+

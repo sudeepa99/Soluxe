@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Searchbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FaUser } from "react-icons/fa";
 
 export default function Searchbar() {
   return (
@@ -19,7 +20,7 @@ export default function Searchbar() {
               className=" mr-sm-2"
             />
             <i className="fas fa-search search-icon"></i>
-            
+            <FaUser className='user_icon'/>
           </Col>
           
           
