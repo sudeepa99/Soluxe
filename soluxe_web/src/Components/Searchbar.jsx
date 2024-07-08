@@ -21,10 +21,10 @@ export default function Searchbar() {
     navigate('/cart');
   }
   return (
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
     <div className='searchbar'>
       <Form inline>
         <Row>
@@ -36,7 +36,7 @@ export default function Searchbar() {
             />
             <i className="fas fa-search search-icon"></i>
             <FaUser className='user_icon' onClick={handleUserIconClick}/>
-            <FaCartShopping className='cart_icon' onClick={handleShow}/>
+            <FaCartShopping className='cart_icon' />
           </Col>
           
           
