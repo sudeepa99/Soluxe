@@ -9,6 +9,7 @@ import Outlet from './Pages/Outlet';
 import OurStory from './Pages/OurStory';
 import SignUp from './Pages/SignUp';
 import Login from './Pages/Login';
+import Cart from './Pages/Cart';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='ourstory' element={<OurStory/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
+        <Route path='/cart' element={<Cart/>}></Route>
       </Routes>
       
       </BrowserRouter>
