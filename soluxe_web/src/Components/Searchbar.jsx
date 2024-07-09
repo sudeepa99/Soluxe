@@ -9,6 +9,8 @@ import { FaUser } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import Login from '../Pages/Login';
 import { useNavigate } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export default function Searchbar() {
   const navigate= useNavigate();
@@ -20,11 +22,12 @@ export default function Searchbar() {
   const handleUserCartClick = () =>{
     navigate('/cart');
   }
-  return (
-  // const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
 
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  return (
+
     <div className='searchbar'>
       <Form inline>
         <Row>
@@ -36,7 +39,20 @@ export default function Searchbar() {
             />
             <i className="fas fa-search search-icon"></i>
             <FaUser className='user_icon' onClick={handleUserIconClick}/>
-            <FaCartShopping className='cart_icon' />
+            <div>
+              <FaCartShopping className='cart_icon'  onClick={handleShow}/>
+              <Offcanvas show={show} onHide={handleClose} backdrop="static" placement='end'>
+              <Offcanvas.Header closeButton>
+              <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+          I will not close if you click outside of me.
+              </Offcanvas.Body>
+             </Offcanvas>
+
+
+            </div>
+            
           </Col>
           
           
