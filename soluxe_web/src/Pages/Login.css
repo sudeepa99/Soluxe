@@ -10,20 +10,26 @@
     margin-top: 10%;
     margin-left: 30%;
     position: relative;
+    border-radius: 10px;
+    border-style:groove;
+    border-color: #252323;
+    border-width: 5px;
 }
 .logo{
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 5px;
+    left: 5px;
 }
 .log_in_header{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-left: 13%;
+    margin-top: 10%;
 }
 .login_button{
     background-color: black;
     border: black;
     margin-left: 23%;
+    
 }
 .input_fields{
     display: flex;
