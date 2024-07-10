@@ -41,12 +41,12 @@ export default function Searchbar() {
             <FaUser className='user_icon' onClick={handleUserIconClick}/>
             <div>
               <FaCartShopping className='cart_icon'  onClick={handleShow}/>
-              <Offcanvas show={show} onHide={handleClose} backdrop="static" placement='end'>
+              <Offcanvas  show={show} onHide={handleClose} backdrop="static" placement='end' >
               <Offcanvas.Header closeButton>
-              <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+              <Offcanvas.Title>Cart</Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-          I will not close if you click outside of me.
+              Added Items will appear here
               </Offcanvas.Body>
              </Offcanvas>
 
