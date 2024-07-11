@@ -1,12 +1,14 @@
 import React from 'react';
 import { Button, Image } from 'react-bootstrap';
 import Logo from "../Assets/logo_soluxe.png";
+import Navigationbar from '../Components/Navigationbar';
 
 export default function SignUp() {
   
     
   return (
     <div>
+      <Navigationbar/>
       <div className='log_in'>
             <Image className='logo' src={Logo}/>
             <h1 className='log_in_header'>SIGNUP</h1>
