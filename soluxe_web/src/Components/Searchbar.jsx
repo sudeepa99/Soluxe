@@ -18,10 +18,6 @@ export default function Searchbar() {
   const handleUserIconClick = () =>{
     navigate('/login');
   }
-
-  const handleUserCartClick = () =>{
-    navigate('/cart');
-  }
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);

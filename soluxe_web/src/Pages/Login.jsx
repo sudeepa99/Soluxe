@@ -2,10 +2,18 @@ import React from 'react'
 import { Button, Image } from 'react-bootstrap';
 import Logo from "../Assets/logo_soluxe.png";
 import "./Login.css";
-
+import Navigationbar from '../Components/Navigationbar';
+import { useNavigate } from 'react-router-dom';
 export default function Login() {
+    const navigate = useNavigate();
+
+    const handleUserSignupClick =() =>{
+        navigate('/signup');
+    }
+
   return (
     <div>
+        <Navigationbar/>
         <div className='log_in'>
             <Image className='logo' src={Logo}/>
             <h1 className='log_in_header'>LOGIN</h1>
@@ -29,7 +37,7 @@ export default function Login() {
             </form>
             <div className='bottom_buttons'>
                 <Button className="login_button2">Forgot Password</Button>
-                <Button className="login_button2">No Account? Sign Up</Button>
+                <Button className="login_button2" onClick={handleUserSignupClick}>No Account? Sign Up</Button>
             </div>
         </div>
       
