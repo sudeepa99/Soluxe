@@ -1,0 +1,1 @@
+const UserSchema = require("../Models/auth");
