@@ -11,6 +11,9 @@ const Signup = () => {
     password: '',
     email: '',
   });
+
+  const [error, setError] = useState(null);
+
   const [error, setError] = useState('');
 
   const handleInputChange = (e) => {
