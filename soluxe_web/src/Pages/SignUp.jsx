@@ -5,7 +5,6 @@ import Navigationbar from '../Components/Navigationbar';
 import { Link } from 'react-router-dom'; 
 import Axios from 'axios';
 
-
 const Signup = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -15,17 +14,29 @@ const Signup = () => {
 
   const [error, setError] = useState(null);
 
+  const [error, setError] = useState('');
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
+    setFormData(prevData => ({
       ...prevData,
       [name]: value,
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    addUser(formData);
+    try {
+      await Axios.post('http://localhost:3001/api/register', formData);
+      resetForm();
+      setError('');
+    } catch (error) {
+      if (error.response) {
+        setError(error.response.data.error || 'An unexpected error occurred');
+      } else {
+        setError('Network error, please try again later.');
+      }
+    }
   };
 
   const resetForm = () => {
@@ -36,29 +47,14 @@ const Signup = () => {
     });
   };
 
-  const addUser = (data) => {
-    Axios.post('http://localhost:3001/api/register', data)
-      .then(() => {
-        resetForm();
-        setError(null);
-      })
-      .catch((error) => {
-        if (error.response && error.response.status === 400) {
-          setError(error.response.data.error);
-        } else {
-          setError('An unexpected error occurred');
-        }
-      });
-  };
-
   return (
-    <>  
-          <Navigationbar/>  
-          <div className='log_in'>
-            <Image className='logo' src={Logo}/>
-            <h1 className='log_in_header'>SIGNUP</h1>
+    <>
+      <Navigationbar />  
+      <div className='log_in'>
+        <Image className='logo' src={Logo} alt="Soluxe Logo" />
+        <h1 className='log_in_header'>SIGNUP</h1>
         <form onSubmit={handleSubmit}>
-          <div className="form-one">
+          <div className="form-group">
             <label htmlFor="name">Enter Your Name</label>
             <input
               type="text"
@@ -67,9 +63,10 @@ const Signup = () => {
               value={formData.name}
               onChange={handleInputChange}
               required
+              placeholder="Your name"
             />
           </div>
-          <div className="form-one">
+          <div className="form-group">
             <label htmlFor="email">Enter Your Email</label>
             <input
               type="email"
@@ -78,6 +75,7 @@ const Signup = () => {
               value={formData.email}
               onChange={handleInputChange}
               required
+              placeholder="Your email"
             />
           </div>
           <div className="form-group">
@@ -89,12 +87,13 @@ const Signup = () => {
               value={formData.password}
               onChange={handleInputChange}
               required
+              placeholder="Your password"
             />
           </div>
-          <button type="submit" className='regi-button'>Add</button><br />
+          <Button type="submit" className='regi-button'>Sign Up</Button>
           {error && <p className="error">{error}</p>}
           <p>
-           <br/> Already have an account?<Link to="/"> <span className='login-span'>Login</span></Link>
+            Already have an account? <Link to="/"> <span className='login-span'>Login</span></Link>
           </p>
         </form>
       </div>

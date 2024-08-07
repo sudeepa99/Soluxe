@@ -9,22 +9,23 @@ const generateToken = user => {
 };
 const UserRegister = async (req,res)=>{
     const {name,email,password}=req.body;
+const UserRegister = async (req, res) => {
+  const { name, email, password } = req.body;
 
-    try{
-        let user = null;
-        user = await UserSchema.findOne({email});
-        if(user){
-            return res.status(400).json({Success:false,message:"User Already Exist"}); 
-        }
+  try {
+      // Check if user already exists
+      let user = await UserSchema.findOne({ email });
+      if (user) {
+          return res.status(400).json({ success: false, message: "User already exists" });
+      }
 
-        const salt = await bcrypt.genSalt(10);
-    const hashPassword = await bcrypt.hash(password, salt);
+      // Hash the password
+      const salt = await bcrypt.genSalt(10);
+      const hashedPassword = await bcrypt.hash(password, salt);
 
-        user = new UserSchema( { name, email, password: hashPassword  });
-        await user.save();
-
-        return res.status(200).json({Success:true,message:"User Created"}); 
-
+      // Create new user
+      user = new UserSchema({ name, email, password: hashedPassword });
+      await user.save();
 
     }
     catch(err){
@@ -32,6 +33,13 @@ const UserRegister = async (req,res)=>{
   }
   
 }
+      // Respond with success
+      return res.status(201).json({ success: true, message: "User created successfully" });
+  } catch (err) {
+      console.error('Error creating user:', err); // Log error details for debugging
+      return res.status(500).json({ success: false, message: "Internal server error" });
+  }
+};
 const UserLogin = async (req, res) => {
    const { email, password } = req.body;
 
