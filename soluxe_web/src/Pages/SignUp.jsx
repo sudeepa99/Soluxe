@@ -14,8 +14,6 @@ const Signup = () => {
 
   const [error, setError] = useState(null);
 
-  const [error, setError] = useState('');
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
