@@ -12,6 +12,7 @@ const Signup = () => {
     password: '',
     email: '',
   });
+
   const [error, setError] = useState(null);
 
   const handleInputChange = (e) => {
