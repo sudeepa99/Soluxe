@@ -21,9 +21,9 @@ const UserRegister = async (req,res)=>{
 
     }
     catch(err){
-        return res.status(500).json({Success:true,message:"Internal Server Error"}); 
-        
-    }
+      return res.status(500).json({ Success: false, message: err.message });
+  }
+  
 }
 const UserLogin = async (req, res) => {
     const { email, password } = req.body;
