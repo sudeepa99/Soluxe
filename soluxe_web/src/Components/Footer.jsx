@@ -1,8 +1,7 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
 import './Footer.css';
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
-
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa'; 
 export default function Footer() {
   return (
     

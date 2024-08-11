@@ -23,3 +23,11 @@
     top: 5px;
     left: 155%;
 }
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-email {
+  margin-right: 10px;
+}

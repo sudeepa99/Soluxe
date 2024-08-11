@@ -67,6 +67,7 @@ const  Login=()=>{
                 <div className='input_fields'>
             <input
               type="email"
+              id='email'
               className="form-control mt-1"
               placeholder="Enter email"
               name="email"
@@ -76,6 +77,7 @@ const  Login=()=>{
             />                    
             <input
               type="password"
+              id='password'
               className="form-control mt-1"
               placeholder="Enter password"
               name="password"

@@ -1,4 +1,4 @@
-const UserSchema = require("../Models/auth");
+const UserSchema = require("../Models/UserShema");
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
@@ -9,8 +9,7 @@ const generateToken = user => {
 };
 const UserRegister = async (req,res)=>{
     const {name,email,password}=req.body;
-const UserRegister = async (req, res) => {
-  const { name, email, password } = req.body;
+
 
   try {
       // Check if user already exists
@@ -27,13 +26,7 @@ const UserRegister = async (req, res) => {
       user = new UserSchema({ name, email, password: hashedPassword });
       await user.save();
 
-    }
-    catch(err){
-      return res.status(500).json({ Success: false, message: err.message });
-  }
-  
-}
-      // Respond with success
+          // Respond with success
       return res.status(201).json({ success: true, message: "User created successfully" });
   } catch (err) {
       console.error('Error creating user:', err); // Log error details for debugging
@@ -74,9 +67,30 @@ const UserLogin = async (req, res) => {
   }
 };
 
+const getUserDetails = async (req, res) => {
+  try {
+    // Get the user ID from the token payload (set by the authenticateToken middleware)
+    const userId = req.user.id;
+    
+    // Find the user by ID
+    const user = await UserSchema.findById(userId).select('-password');
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: user,
+    });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).json({ success: false, message: 'Internal server error, please try again' });
+  }
+};
   
   module.exports = {
     UserRegister,
     UserLogin,
+    getUserDetails
   };
   

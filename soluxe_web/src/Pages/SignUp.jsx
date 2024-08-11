@@ -13,7 +13,6 @@ const Signup = () => {
   });
 
   const [error, setError] = useState(null);
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -57,6 +56,7 @@ const Signup = () => {
             <input
               type="text"
               id="name"
+              autoComplete='name'
               name="name"
               value={formData.name}
               onChange={handleInputChange}
@@ -69,6 +69,7 @@ const Signup = () => {
             <input
               type="email"
               id="email"
+              autoComplete='email'
               name="email"
               value={formData.email}
               onChange={handleInputChange}
